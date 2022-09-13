@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark')
+         } else {
+          document.documentElement.classList.remove('dark')
+                }
+    </script>
+    <title>Ekonomi Digital</title>
+  </head>
+  <body>
+     <!-- Header Start -->
+      <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+          <div class="flex items-center justify-between relative">
+            <div class="px-4">
+              <a href="#" class="text-lg font-bold text-primary block py-6">DelfinDaffaPebrian</a>
+            </div>
+            <div class="flex items-center px-4">
+              <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+              </button>
+
+              <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a href="index.html" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#about" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#portfolio" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#sponsor" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Sponsor</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#blog" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                  </li>
+                  <li class="group">
+                    <a href="#contact" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                  </li>
+                  <li class="mt-3 lg:mt-0 flex items-center pl-8">
+                    <div class="flex">
+                      <span class="mr-2 text-sm text-slate-500">Light</span>
+                      <input type="checkbox" class="hidden" id="dark-toggle">
+                      <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                          <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                        </div>
+                      </label>
+                      <span class="ml-2 text-sm text-slate-500">Dark</span>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- Header End-->
+
+    <!-- Typography Start -->
+    <section id="typography" class="bg-slate-100 pt-36 pb-32 dark:bg-dark px-4">
+      <div class="prose mx-auto mt-4 dark:prose-invert lg:prose-lg">
+        <h2 class="text-dark dark:text-white">Perkembangan Ekonomi Digital di Indonesia Selama Masa Pandemi</h2>
+        <figure >
+          <img class="rounded-md shadow-md overflow-hidden" src="dist/img/artikel/ekonomi.jpg" alt="" />
+          <figcaption>Sumber foto : https://unsplash.com/</figcaption>
+        </figure>
+        <p class="text-justify text-dark dark:text-slate-300">
+          Perkembangan teknologi informasi saat ini berkembang pesat berbagai dampak dari perkembangan teknologi salah satunya adalah perekonomian, pada saat ini ekonomi didital yang sedang marak dimana pertumbuhan pada konsumsi yang cukup
+          tinggi dikarenakan semakin mudahnya akses jual beli melalui berbagai <em>platform</em>, yang memudahkan konsumen dalam memperoleh sebuah barang ataupun jasa. Ekonomi digital ini memiliki potensi dalam memajukan perokonomian Indonesia secara
+          optimal, ekonomi digital ini juga mengalami perkembangan yang sangat pesat seiring dengan semakin meningkatnya kebutuhan akan konsumen.
+        </p>
+        <p class="text-dark dark:text-slate-300">Dikutip dari CNN Indonesia <em>online</em> menteri koordinator bidang perekonomian Airlangga Hartarto menyebutkan bahwa:</p>
+        <blockquote>
+          <p class="text-justify text-dark dark:text-slate-300">
+            Kurang lebih 41,9 % transaksi ekonomi digital di Asia Tenggara berasal dari Indonesia dan angkanya hampir menyentuh US$44 miliar atau setara dengan Rp 660 triliun. Pertumbuhan ekonomi digital Indonesia pada tahun 2021 ini menunjukan
+            peningkatan dikarenakan pandemi <em>Covid-19</em>. Dan menurut survei ekonomi digital ini juga turut membuat perusahaan rintisan atau <em>startup</em> dengan Indonesia memiliki sekitar 2.324. Indonesia menempati posisi ke 5 di dunia, Indonesia
+            kalah dari negara negara di Eropa dan juga Amerika.
+          </p>
+        </blockquote>
+        <p class="text-justify text-dark dark:text-slate-300">
+          Dalam perkembangan ekonomi ini memberikan sebuah peluang kepada pelaku UMKM dimasa pandemi, selain meningkatkan kesejahteraan pelaku UMKM, UMKM ekonomi digital ini juga berperan menyerap dari 97 % total tenaga kerja dan juga 99 %
+          dari lapangan kerja, pelaku UMKM digital ini dapat memulihkan ekonomi Indonesia yaitu ekspor nonmigas dan hampir mancapai 37,74 miliar di tahun 2022 menurut kominfo <em>online</em>. Ada beberapa sektor yang semakin berkembang dengan adanya
+          ekonomi digital ini diantaranya dari segi bisnis yang membuat kebiasaan berbisnis semakin berkembang dengan dukungan teknologi informasi dan juga komunikasi dalam menghadapi pesaing-pesaing.
+        </p>
+        <p class="text-justify text-dark dark:text-slate-300">
+          Selain UMKM banyak pelaku bisnis yang menggunakan sosial media sebagai penggunaan penjualan seperti Instagram, Facebook dan juga Whatsapp, selain penggunaan sosial media pelaku bisnis juga menggunakan aplikasi yang sekarang sering
+          digunakan seperti Shopee, Tokopedia, Lazada, Bukalapak sampai layanan <em>Fintech</em> Indonesia. Selain ekonomi digital dalam bidang bisnis ada juga dalam bidang transportasi seperti Gojek dan Grab. Selain dari segi bisnis perkembangan
+          ekonomi digital ini juga membuat sosial dan kebudayaan mengalami peningkatan khususnya di Indonesia yang penduduknya mulai mengikuti perkembangan teknologi. Perkembangan ekonomi digital ini juga membuat segi konsumen meningkat
+          dikarenakan memudahkannya dalam pembelanjaan. Dalam penggunaan ekonomi digital ini juga munculah berbagai macam transaksi yang digunakan seperti COD (<em>Cash On Delivery</em>), dompet digital, adanya <em>cashback</em>, <em>paylater</em> dan sebagainya.
+        </p>
+        <p class="text-justify text-dark dark:text-slate-300">
+          Pada saat ini <em>e-commerce</em> adalah tulang punggung dari perekonomian Indonesia karena kontribusinya hampir mencapai 72% dengan angka yang mencapai $32 miliar, prediksi <em>e-commerce</em> akan semakin meningkat pada tahun 2025 dengan angka
+          mencapai $85 miliar, selain bisnis ekonomi digital, ada juga yang dapat di tingkatkan dan dikembangkan seperti <em>healtech</em> dan juga <em>edutech</em>. selain dari <em>e-commerce</em> potensi ekonomi digital bisa dari berbagai hal contohnya dari IoT
+          dengan potensi pasar Asia Pasifik yaitu mencapai angka $583 miliar pada tahun 2020, <em>On demand service</em> dengan pengguna sekitar 132 juta pengguna, dan juga financial tecnologi dengan transaksi di indonesia pada tahun 2016 sekitar $14,5
+          miliar menurut katadata ekonografik.
+        </p>
+        
+           <div class="flex flex-wrap justify-center items-center">
+            <div class="aspect-w-16 aspect-h-10">
+            <iframe  src="https://www.youtube.com/embed/AL7ZQcFE-0c" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </div>
+          </div>
+
+        <hr />
+        <h2 class="text-dark dark:text-white">Ada Beberapa Dampak dari Perkembangan Ekonomi Digital</h2>
+        <ol class="text-justify dark:text-slate-300">
+          <li>Meratanya ekonomi dilingkungan masyarakat sehingga transaksi perekonomian semakin cepat dan juga mudah.</li>
+          <li>Pendidikan untuk anak-anak di Indonesia semakin mudah dan terjangkau seperti les <em>online</em>.</li>
+          <li>
+            Segala macam informasi yang dapat diakses oleh siapapun dan kapanpun untuk membuka peluang bisnis, sosial media dan <em>platform</em> digital menjadi landasan untuk pembangunan bisnis ekonomi sehingga pelaku usaha kecil dapat berkembang,
+            pemberdayaan SDM (sumber daya manusia) yang merata dan baik.
+          </li>
+        </ol>
+        <p class="text-justify dark:text-slate-300">
+          Hal ini diketahui dengan adanya beberapa mitra <em>driver</em> ojek online yang memiliki keterbatasan seperti penyandang disabilitas. Ada juga dampak yang yang signifikan dalam pembangunan Indonesia dalam ekonomi digital menurut Oxford
+          Economics pada tahun 2016 menyatakan bahwa keberadaan dari TIK memberikan sebuah kontribusi yang signifikan terhadap sebuah produk <em>domestic</em> bruto atau PDB dan juga jumlah lapangan kerja.
+        </p>
+        <h3 class="text-justify dark:text-white">Ekonomi Digital Memiliki Tantangan Dalam Berkembang Menurut <a class="dark:text-white" href="https://www.investindonesia.go.id/" target="_blank">Investindonesia.go.id </a></h3>
+        <ol>
+          <li>
+            <p class="text-justify dark:text-slate-300">
+              <strong class="dark:text-white"><em>Cyber security</em></strong> dimana Indonesia memiliki arus transaksi <em>online</em> yang terus meningkat disetiap tahunnya, hal ini menyebabkan banyak celah dalam penyerangan terhadap dunia <em>cyber</Em>, Indonesia pernah mendapatkan 1.225
+              miliar serangan <em>cyber</em> setiap harinya, <em>ransomware</em> yang paling sering menyerang di sektor ekonomi digital dan juga dapat membobol bank.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify dark:text-slate-300">
+              <strong class="dark:text-white">Persaingan yang semakin ketat</strong> membuat produk-produk luar masuk ke Indonesia, maka berakibat pada produk produk lokal yang tidak berkembang, namun diharapkan dengan adanya ekonomi digital ini Indonesia tidak hanya
+              melakukan bisnis secara domestik namun juga bisa melakukan bisnis secara internasional dam masuk kedalam pasar internasional.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify dark:text-slate-300">
+              <strong class="dark:text-white">Pembangunan SDM</strong> dikutip dari <a class="dark:text-slate-300" href="http://www.kompas.com" target="_blank">Kompas.com</a> bahwa asia tenggara memiliki sumber daya professional dibidang ekonomi digital yang masih minim, dengan hal ini pemerintah harus
+              mengedukasi masyarakat agar mempersiapkan sistem Pendidikan yang sesuai dengan perkembangan zaman agar memiliki SDM yang unggul dalam menghadapi ekonomi digital pada era sekarang.
+            </p>
+          </li>
+          <li>
+            <p class="text-justify dark:text-slate-300"><strong class="dark:text-white">Ketersediaan akses internet yang tidak mumpuni </strong> dimana Indonesia memiliki akses internet yang tidak merata dan hanya berfokus pada kota-kota besar saja.</p>
+          </li>
+          <li>
+            <p class="text-justify dark:text-slate-300">
+              <strong class="dark:text-white">Regulasi yang belum mengikuti perkembangan zaman </strong> dimana adanya regulasi dan dasar hukum yang perlu dirancang untuk mengikuti perkembangan zaman. Hal ini pemerintah harus dengan sigap membuat sebuah peraturan
+              perundang-undangan untuk mengatur jalannya perekonomian digital di Indonesia, tujuannya adalah untuk melindungi hak konsumen dan juga pelaku bisnis digital agar penggunaan ekonomi digital ini berjalan dengan baik.
+            </p>
+          </li>
+        </ol>
+        <hr />
+        <p class="text-justify dark:text-slate-300">
+              <strong class="dark:text-white">Referensi : </strong> 
+              <ol>
+                <li><a class="text-justify dark:text-slate-300" href="https://www.investindonesia.go.id/id/artikel-investasi/detail/5-tantangan-digital-ekonomi-di-indonesia" target="_blank">https://www.investindonesia.go.id/id/artikel-investasi/detail/5-tantangan-digital-ekonomi-di-indonesia</a></li>
+                <li><a class="text-justify dark:text-slate-300" href="https://www.cnnindonesia.com/ekonomi/20211213110232-532-733272/airlangga-sebut-ri-kuasai-419-persen-ekonomi-digital-asean" target="_blank">https://www.cnnindonesia.com/ekonomi/20211213110232-532-733272/airlangga-sebut-ri-kuasai-419-persen-ekonomi-digital-asean</a></li>
+                <li><a class="text-justify dark:text-slate-300" href="https://www.kompasiana.com/pingki18024/5c83d8d86ddcae2061302587/peran-bank-indonesia-di-zaman-digital-economy" target="_blank">https://www.kompasiana.com/pingki18024/5c83d8d86ddcae2061302587/peran-bank-indonesia-di-zaman-digital-economy</a></li>
+                <li><a class="text-justify dark:text-slate-300" href="https://katadata.co.id/ariayudhistira/infografik/5e9a56bc25aa1/potensi-ekonomi-digital-indonesia" target="_blank">https://katadata.co.id/ariayudhistira/infografik/5e9a56bc25aa1/potensi-ekonomi-digital-indonesia</a></li>
+              </ol>
+        </p>
+      </div>
+    </section>
+    <!-- Typography End -->
+
+    <!-- Clients Section Start-->
+    <section class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300" id="sponsor">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class=" mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Sponsor</h4>
+            <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dakr:text-dark">Sponsor yang pernah bekerja sama</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">Klik logo untuk info lebih lanjut.</p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="https://ittelkom-pwt.ac.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/1.png" alt="ittp"/>
+            </a>
+            <a href="https://pmb.ittelkom-pwt.ac.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/pmb2.webp" alt="pmb"/>
+            </a>
+            <a href="https://sisfo.ittelkom-pwt.ac.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/sisfo.webp" alt="sisfo"/>
+            </a>
+          </div>
+        </div>
+    </section>
+    <!-- Clients Section End-->
+
+   <!--Contact Section Start-->
+    <section id="contact" class="pt-3 pb-32 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi Kami</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">Alamat email Anda tidak akan dipublikasikan. Hubungi kami jika ingin bekerja sama</p>
+          </div>
+          <div  class="my-alert hidden">
+          <div id="alert-3" class=" flex lg:w-2/3 lg:mx-auto p-4 mb-4 bg-green-100 rounded-lg dark:bg-green-200 " role="alert">
+          <svg class="flex-shrink-0 w-5 h-5 text-green-700 dark:text-green-800" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <div class="ml-3 text-sm font-medium text-green-700 dark:text-green-800">
+            <strong>Terima Kasih!!</strong> Pesan anda sudah kami terima. Kami akan segera menghubungi anda.
+          </div>
+          <button id="alert" type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-100 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex h-8 w-8 dark:bg-green-200 dark:text-green-600 dark:hover:bg-green-300" data-dismiss-target="alert-3" aria-label="Close">
+            <span class="sr-only">Close</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          </div>
+          </div>
+          <form name="Ekonomi-contact-form">
+            <div class="w-full lg:w-2/3 lg:mx-auto">
+          <div class="w-ful px-4 mb-8">
+            <label for="name" class="text-base font-bold text-primary">Nama</label>
+            <input type="text" id="name" name="nama" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+          </div>
+          <div class="w-ful px-4 mb-8">
+            <label for="name" class="text-base font-bold text-primary">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+          </div>
+          <div class="w-ful px-4 mb-8">
+            <label for="pesan" class="text-base font-bold text-primary">Pesan</label>
+            <textarea type="text" id="pesan" name="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"> </textarea>
+          </div>
+          <div class="text-base text-center font-semibold text-white bg-primary py-3 px-4 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 btn-kirim">
+          <button type="submit">Kirim</button> 
+          </div>
+          <div class="text-white bg-primary hover:opacity-80 hover:shadow-lg transition duration-500 focus:ring-4 focus:ring-blue-300 font-medium text-sm py-3 px-4 rounded-full w-full mt-2 text-center mr-2 dark:bg-primary dark:hover:bg-primary dark:focus:primary items-center btn-loading hidden">
+          <button disabled type="button" >
+          <svg role="status" class="inline w-4 h-4 mr-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"/>
+          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"/>
+          </svg>
+          Loading...
+          </button>
+          </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--Contact Section End-->
+
+    <!--Footer Section Start-->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+              <h2 class="font-bold text-4xl text-white mb-5">DEL'V</h2>
+              <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+              <p>delfindaffa@gmail.com</p>
+              <p class="text-sm">&copy; 2022. All Rights Reserved.</p>
+        </div>
+       <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+          <ul class="text-slate-300">
+            <li>
+              <a href="index.html#blog" class="inline-block text-base hover:text-primary mb-3">Pengembangan Sektor E-Tourism</a>
+            </li>
+            <li>
+              <a href="artikel.html" class="inline-block text-base hover:text-primary mb-3">Perkembangan Ekonomi Digital</a>
+            </li>
+            <li>
+              <a href="index.html#blog" class="inline-block text-base hover:text-primary mb-3">Transformasi Digital di Indonesia</a>
+            </li>
+          </ul>
+      </div>
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+          <ul class="text-slate-300">
+            <li>
+              <a href="index.html#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+            </li>
+            <li>
+              <a href="index.html#aboute" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+            </li>
+            <li>
+              <a href="index.html#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+            </li>
+            <li>
+              <a href="index.html#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+            </li>
+             <li>
+              <a href="index.html#sponsor" class="inline-block text-base hover:text-primary mb-3">sponsor</a>
+            </li>
+            <li>
+              <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+            </li>
+          </ul>
+        </div>
+          <div class="w-full pt-10 border-t border-slate-700">
+            <div class="flex items-center justify-center mb-5">
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/delfindaffa24" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white ">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+              </a>
+              <!-- Youtube -->
+              <a href="https://www.youtube.com/channel/UC23GKL9GzT4fef2dLMhmQxA" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white ">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white ">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://wa.me/+628889824990" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white ">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </a>
+            </div>
+            <p class="font-medium text-xs text-slate-500 text-center">Dibuat Oleh <a href="https://instagram.com/delfindaffa24" target="_blank" class="font-bold text-primary">Delfin Daffa Pebrian</a>, Menggunakan <a href="https://tailwinds.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a> </p>
+          </div>
+      </div>
+    </footer>
+    <!--Footer Section End-->
+
+    <!-- Back to start-->
+    <a href="#typography" class="fixed bottom-4 right-4 h-14 w-14 hidden justify-center items-center bg-primary rounded-full p-4 hover:animate-pulse " id="top">
+      <span class="block w-5 h-5 rotate-45 border-t-2 border-l-2 mt-2"></span>
+    </a>
+    <!-- Back to end-->
+
+   <script src="dist/js/script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw84lOGS0Ym48YrTpFay8nYRp8oOSDJhdY3x2mCt23WHvjgrj4VVCN4MwqKJG_RrUU/exec'
+        const form = document.forms['Ekonomi-contact-form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+       
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            // ketika tombol submit diklik
+            // tampilkan tombol loading, hilangkan tombol submit
+            btnLoading.classList.toggle('hidden');
+            btnKirim.classList.toggle('hidden');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              // tampilkan tombol kirim, hilangkan tombol loading
+              btnLoading.classList.toggle('hidden');
+              btnKirim.classList.toggle('hidden');
+              // tampilkan alert
+              myAlert.classList.toggle('hidden');
+              // reset formnya
+              form.reset();
+              console.log('Success!', response)
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+   </script>
+
+  </body>
+</html>
