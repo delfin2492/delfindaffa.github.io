@@ -27,13 +27,13 @@ class MyFooter extends HTMLElement  {
           <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
           <ul class="text-slate-300">
             <li>
-              <a href="index.html#blog" class="inline-block text-base hover:text-primary mb-3">Pengembangan Sektor E-Tourism</a>
+              <a href="artikel2.html" class="inline-block text-base hover:text-primary mb-3">Pengembangan Sektor E-Tourism</a>
             </li>
             <li>
               <a href="artikel.html" class="inline-block text-base hover:text-primary mb-3">Perkembangan Ekonomi Digital</a>
             </li>
             <li>
-              <a href="index.html#blog" class="inline-block text-base hover:text-primary mb-3">Transformasi Digital di Indonesia</a>
+              <a href="artikel3.html" class="inline-block text-base hover:text-primary mb-3">Transformasi Digital di Indonesia</a>
             </li>
           </ul>
       </div>
