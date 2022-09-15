@@ -18,7 +18,7 @@ class MyFooter extends HTMLElement  {
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-              <h2 class="font-bold text-4xl text-white mb-5">DEL'V</h2>
+              <img role="img" width="170" class="fill-current" src="dist/img/Logo.png" /></img>
               <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
               <p>delfindaffa@gmail.com</p>
               <p class="text-sm">&copy; 2022. All Rights Reserved.</p>
