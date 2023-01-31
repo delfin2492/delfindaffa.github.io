@@ -21,7 +21,7 @@ class MyFooter extends HTMLElement  {
               <img role="img" width="170" class="fill-current" src="dist/img/Logo.png" /></img>
               <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
               <p>delfindaffa@gmail.com</p>
-              <p class="text-sm">&copy; 2022. All Rights Reserved.</p>
+              <p class="text-sm">&copy; 2023. All Rights Reserved.</p>
         </div>
        <div class="w-full px-4 mb-12 md:w-1/3">
           <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
