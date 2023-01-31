@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="dist/img/Logo.png">
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark')
+         } else {
+          document.documentElement.classList.remove('dark')
+                }
+    </script>
+    <title>Smarthome Sederhana Berbasis IoT Menggunakan Aplikasi Telegram</title>
+  </head>
+  <body>
+     <!-- Header Start -->
+      <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+          <div class="flex items-center justify-between relative">
+            <div class="px-4">
+              <a href="#" class="text-lg font-bold text-primary block py-6">DelfinDaffaPebrian</a>
+            </div>
+            <div class="flex items-center px-4">
+              <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+              </button>
+
+              <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a href="index.html" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#about" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#portfolio" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#sponsor" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Sponsor</a>
+                  </li>
+                  <li class="group">
+                    <a href="index.html#blog" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                  </li>
+                  <li class="group">
+                    <a href="#contact" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                  </li>
+                  <li class="mt-3 lg:mt-0 flex items-center pl-8">
+                    <div class="flex">
+                      <span class="mr-2 text-sm text-slate-500">Light</span>
+                      <input type="checkbox" class="hidden" id="dark-toggle">
+                      <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                          <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                        </div>
+                      </label>
+                      <span class="ml-2 text-sm text-slate-500">Dark</span>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- Header End-->
+
+    <!-- Typography Start -->
+    <section id="typography" class="bg-slate-100 pt-36 pb-32 dark:bg-dark px-4">
+      <div class="prose mx-auto mt-4 dark:prose-invert lg:prose-lg">
+        <h2 class="text-dark dark:text-white text-center"><em>Smarthome</em> Sederhana Berbasis IoT Menggunakan Aplikasi Telegram</h2>
+        <figure >
+          <img class="rounded-md shadow-md overflow-hidden" src="dist/img/artikel/smarthome.png" alt="" />
+          <figcaption>Sumber foto : https://pixabay.com/</figcaption>
+        </figure>
+        <p class="text-justify text-dark dark:text-slate-300">
+            Smart Home merupakan sebuah bentuk kendali dan dipantau secara otomatis terhadap alat-alat listrik rumah tangga, 
+            sistem penerangan atau sistem keamanan rumah yang semuanya mampu dikendalikan dan dipantau secara langsung sesuai keinginan oleh pemilik. 
+        </p>
+        <p class="text-justify text-dark dark:text-slate-300">Pada artikel kali ini, penulis ingin membagikan sebuah tutorial untuk membuat sebuah sistem 
+            "<em>Smarthome</em> Sederhana Berbasis IoT Menggunakan Telegram".</p>
+
+        <p class="text-justify text-dark dark:text-slate-300"><em>Smarthome</em> sederhana ini nantinya dapat digunakan untuk menyalakan lampu dan menyalakan kipas
+            sesuai dengan suhu pada ruangan. <em>Smarthome</em> ini dapat dikendalikan dan dimonitoring melalui Bot pada aplikasi Telegram sehingga dapat diakses dimana saja dan kapan saja 
+            jika <em>smartphone</em> pengguna terhubung dengan internet.
+        </p>
+        
+        <hr />
+        <h3 class="text-dark dark:text-white">Berikut bahan dan alat yang akan digunakan</h3>
+        <ol class="text-justify dark:text-slate-300">
+          <li>Mikrokontroller NodeMCU ESP8266</li>
+          <li>Relay</li>
+          <li>Kipas</li>
+          <li>Sensor Suhu DHT11</li>
+          <li>Lampu</li>
+          <li>Adaptor</li>
+          <li>Kabel Jumper</li>
+        </ol>
+        <p class="text-justify dark:text-slate-300">
+         Kemudian rangkai komponen-komponen diatas sesuai dengan gambar dibawah ini, ada beberapa hal yang perlu perhatikan
+         ketika merangkai komponen seperti, pin GND dan VCC tidak boleh tertukar sambungannya, kutub positif dan negatif pada adaptor
+         tidak boleh tertukar.
+        </p>
+        <figure>
+            <img class="rounded-md shadow-md overflow-hidden" src="dist/img/artikel/Rsmarthome.png" alt="" />
+        </figure>
+
+        <h3 class="text-justify dark:text-white">Membuat Bot pada aplikasi Telegram</a></h3>
+            <img class="rounded-md shadow-md overflow-hidden" src="dist/img/artikel/bot.jpg" alt="" />
+        <p class="text-justify dark:text-slate-300">
+            Setelah selesai membuat bot Telegram, kemudian salin token API yang dikirim oleh bot Telegram kedalam codingan. Jika belum paham membuat bot Telegram, Anda dapat membuatnya dengan
+            mengikuti petunjuk di sini: <a class="dark:text-slate-300" href="https://core.telegram.org/bots#3-how-do-i-create-a-bot" target="_blank">cara membuat bot telegram</a> 
+        </p>
+
+        <h3 class="text-justify dark:text-white">Membuat program pada Arduino IDE</a></h3>
+        <p class="text-justify dark:text-slate-300">
+           Sebelum memulai membuat program, pertama kita harus menginstall library yang diperlukan seperti ESP8266Wifi, Telegram Bot, dan DHT
+        </p>
+        <div class="flex flex-row">
+          <img class="h-auto max-w-xs" src="dist/wifi.png" alt="image description">
+          <img class="h-auto max-w-xs" src="dist/Bottele.png" alt="image description">
+          <img class="h-auto max-w-xs" src="dist/DHT11.png" alt="image description">
+        </div>
+        <p class="text-justify dark:text-slate-300">
+          Setelah menginstall seluruh library yang dibutuhkan, lalu selanjutnya membuat program seperti codingan dibawah ini.
+          Pastikan untuk mengganti "YOUR_SSID" dan "YOUR_Password" dengan SSID dan password WiFi yang akan anda gunakan serta mengganti "YOUR_Bot_Token" 
+          dengan token bot Telegram anda. 
+        </p>
+        <iframe class="rounded-md " src="https://pastebin.com/embed_iframe/3WL7istg" style="border:none;width:100%;height:400px;"></iframe>
+        <hr />
+        <h3 class="text-justify dark:text-white">Upload Program dan Demo</a></h3>
+        <p class="text-justify dark:text-slate-300">
+          Selanjutnya mengupload program yang sudah dibuat kedalam NodeMCU ESP8266. Jika semua cara-cara diatas sudah dilakukan 
+          maka hasilnya akan seperti pada video demo dibawah ini.
+        </p>
+        <div class="flex flex-wrap justify-center items-center">
+          <div class="aspect-w-16 aspect-h-10">
+          <iframe  src="https://www.youtube.com/embed/YcPDzYvF_k4" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Typography End -->
+
+    <!-- Clients Section Start-->
+    <section class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300" id="sponsor">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class=" mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Sponsor</h4>
+            <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dakr:text-dark">Sponsor yang pernah bekerja sama</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">Klik logo untuk info lebih lanjut.</p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="https://ittelkom-pwt.ac.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/1.png" alt="ittp"/>
+            </a>
+            <a href="https://pmb.ittelkom-pwt.ac.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/pmb2.webp" alt="pmb"/>
+            </a>
+            <a href="https://sisfo.ittelkom-pwt.ac.id/" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/sisfo.webp" alt="sisfo"/>
+            </a>
+          </div>
+        </div>
+    </section>
+    <!-- Clients Section End-->
+    
+    <!--Contact Section Start-->
+    <section id="contact" class="pt-3 pb-32 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi Kami</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">Alamat email Anda tidak akan dipublikasikan. Hubungi kami jika ingin bekerja sama</p>
+          </div>
+          <div  class="my-alert hidden">
+          <div id="alert-3" class=" flex lg:w-2/3 lg:mx-auto p-4 mb-4 bg-green-100 rounded-lg dark:bg-green-200 " role="alert">
+          <svg class="flex-shrink-0 w-5 h-5 text-green-700 dark:text-green-800" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <div class="ml-3 text-sm font-medium text-green-700 dark:text-green-800">
+            <strong>Terima Kasih!!</strong> Pesan anda sudah kami terima. Kami akan segera menghubungi anda.
+          </div>
+          <button id="alert" type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-100 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex h-8 w-8 dark:bg-green-200 dark:text-green-600 dark:hover:bg-green-300" data-dismiss-target="alert-3" aria-label="Close">
+            <span class="sr-only">Close</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          </div>
+          </div>
+          <form name="Ekonomi-contact-form">
+            <div class="w-full lg:w-2/3 lg:mx-auto">
+          <div class="w-ful px-4 mb-8">
+            <label for="name" class="text-base font-bold text-primary">Nama</label>
+            <input type="text" id="name" name="nama" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" autocomplete="off" />
+          </div>
+          <div class="w-ful px-4 mb-8">
+            <label for="name" class="text-base font-bold text-primary">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" autocomplete="off" />
+          </div>
+          <div class="w-ful px-4 mb-8">
+            <label for="pesan" class="text-base font-bold text-primary">Pesan</label>
+            <textarea type="text" id="pesan" name="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"> </textarea>
+          </div>
+          <div class="text-base text-center font-semibold text-white bg-primary py-3 px-4 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 btn-kirim">
+          <button type="submit">Kirim</button> 
+          </div>
+          <div class="text-white bg-primary hover:opacity-80 hover:shadow-lg transition duration-500 focus:ring-4 focus:ring-blue-300 font-medium text-sm py-3 px-4 rounded-full w-full mt-2 text-center mr-2 dark:bg-primary dark:hover:bg-primary dark:focus:primary items-center btn-loading hidden">
+          <button disabled type="button" >
+          <svg role="status" class="inline w-4 h-4 mr-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"/>
+          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"/>
+          </svg>
+          Loading...
+          </button>
+          </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--Contact Section End-->
+
+    <!--Footer & Contact-->
+    <script type="module" src="main.js"></script>
+    <my-footer></my-footer>
+    <!--Footer & Contact-->
+
+    <!-- Back to start-->
+    <a href="#typography" class="fixed bottom-4 right-4 h-14 w-14 hidden justify-center items-center bg-primary rounded-full p-4 hover:animate-pulse " id="top">
+      <span class="block w-5 h-5 rotate-45 border-t-2 border-l-2 mt-2"></span>
+    </a>
+    <!-- Back to end-->
+
+   <script src="dist/js/script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw84lOGS0Ym48YrTpFay8nYRp8oOSDJhdY3x2mCt23WHvjgrj4VVCN4MwqKJG_RrUU/exec'
+        const form = document.forms['Ekonomi-contact-form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+       
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            // ketika tombol submit diklik
+            // tampilkan tombol loading, hilangkan tombol submit
+            btnLoading.classList.toggle('hidden');
+            btnKirim.classList.toggle('hidden');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              // tampilkan tombol kirim, hilangkan tombol loading
+              btnLoading.classList.toggle('hidden');
+              btnKirim.classList.toggle('hidden');
+              // tampilkan alert
+              myAlert.classList.toggle('hidden');
+              // reset formnya
+              form.reset();
+              console.log('Success!', response)
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+   </script>
+
+  </body>
+</html>
