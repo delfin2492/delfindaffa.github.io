@@ -39,7 +39,7 @@ class MyFooter extends HTMLElement  {
               <a href="smarthome.html" class="inline-block text-base hover:text-primary mb-3">Smarthome Sederhana Berbasis IoT</a>
             </li>
             <li>
-              <a href="gerbangotomatis.html" class="inline-block text-base hover:text-primary mb-3">Miniatur Pintu Otomatis</a>
+              <a href="pintuotomatis.html" class="inline-block text-base hover:text-primary mb-3">Miniatur Pintu Otomatis</a>
             </li>
           </ul>
       </div>
