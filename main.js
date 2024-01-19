@@ -21,7 +21,7 @@ class MyFooter extends HTMLElement  {
               <img role="img" width="170" class="fill-current" src="dist/img/Logo.png" /></img>
               <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
               <p>delfindaffa@gmail.com</p>
-              <p class="text-sm">&copy; 2023. All Rights Reserved.</p>
+              <p class="text-sm">&copy; 2024. All Rights Reserved.</p>
         </div>
        <div class="w-full px-4 mb-12 md:w-1/3">
           <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
@@ -41,6 +41,9 @@ class MyFooter extends HTMLElement  {
             <li>
               <a href="pintuotomatis.html" class="inline-block text-base hover:text-primary mb-3">Miniatur Pintu Otomatis</a>
             </li>
+            <li>
+              <a href="Smartpillbox.html" class="inline-block text-base hover:text-primary mb-3">Smart Pillbox</a>
+            </li>
           </ul>
       </div>
         <div class="w-full px-4 mb-12 md:w-1/3">
@@ -59,7 +62,7 @@ class MyFooter extends HTMLElement  {
               <a href="index.html#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
             </li>
              <li>
-              <a href="#sponsor" class="inline-block text-base hover:text-primary mb-3">sponsor</a>
+              <a href="#sponsor" class="inline-block text-base hover:text-primary mb-3">Sponsor</a>
             </li>
             <li>
               <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
@@ -76,7 +79,7 @@ class MyFooter extends HTMLElement  {
               <a href="https://www.youtube.com/channel/UC23GKL9GzT4fef2dLMhmQxA" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white ">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </a>
-              <a href="https://www.linkedin.com/in/delfin-daffa-90a4ba24b/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white ">
+              <a href="https://www.linkedin.com/in/delfindaffa/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white ">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </a>
               <!-- Github -->
